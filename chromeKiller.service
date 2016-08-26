@@ -1,0 +1,12 @@
+[Unit]
+Description= Kill chrome when more than 75 of RAM is OCCUPIED
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python <path/to/script>
+
+[Install]
+WantedBy=multi-user.target
+
+
